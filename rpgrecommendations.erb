@@ -1,0 +1,11 @@
+<p>Just enter the RPGGeek username you would like to get recommendations for.  Please note a few important details about this program:
+<ul><li>It was written in an afternoon to satisfy a curiosity - there is no error detection.
+<li>Niceties like graphics and AJAX interactivity require time and thought that I've not really decided to give to this project
+<li>This program only works on RPG's - not RPG items
+<li>The more RPGs you have rated, the better this algorithm works
+<li>The basic algorithm (a Pearson similarity metric) is prone to bias caused by a trusted reviewer being the only the person to rate an item (these are generally pretty easy to spot though)
+<li>This program only uses publicly available information - no login information or cookies are required
+</ul>With those notes in mind, enter a username below!</p>
+<form action="/find-rpg-recommendations" method="post">
+<label for="username">Username</label><input type="text" name="username" /><br />
+<input type="submit" value="Submit">
